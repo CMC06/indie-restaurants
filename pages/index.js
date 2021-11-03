@@ -1,5 +1,5 @@
 import { server } from '../config';
-import RestaurantList from '../Components/RestaurantList';
+import RestaurantList from '../components/RestaurantList';
 import styles from '../styles/Layout.module.css'
 
 export default function Home({ restaurants }) {

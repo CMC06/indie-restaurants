@@ -1,4 +1,5 @@
-import Meta from "../Components/Meta"
+import Meta from "../components/Meta";
+import GoBack from "../components/GoBack";
 
 const about = () => {
   return (
@@ -11,6 +12,7 @@ const about = () => {
       <p>
         We are committed to providing a free platform for restaurants to connect with possible diners.
       </p>
+      <GoBack />
     </div>
   )
 }
