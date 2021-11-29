@@ -1,7 +1,8 @@
 import { server } from '../../../config';
-import Link from 'next/link';
 import {useRouter} from 'next/router';
-import Meta from '../../../Components/Meta';
+import Meta from '../../../components/Meta';
+import GoBack from '../../../components/GoBack';
+import RestaurantPage from '../../../components/RestaurantPage';
 
 const restaurant = ({ restaurant }) => {
 
@@ -11,9 +12,8 @@ const restaurant = ({ restaurant }) => {
   return (
     <div>
       <Meta title={restaurant.title} description={restaurant.tagline} keywords={restaurant.keywords} />
-      <h1>{restaurant.title}</h1>
-      <p>{restaurant.description}</p>
-      <Link href='/'>Go Back</Link>
+      <RestaurantPage title={restaurant.title} description={restaurant.description} location={restaurant.locations} />
+      <GoBack />
     </div>
   )
 }
